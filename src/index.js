@@ -1,12 +1,7 @@
-
 import ReactDOM from 'react-dom';
-import Newt from './App';
-//import newt from './App';
+import App from './App';
 
 ReactDOM.render(
-
-    <Newt />,
-  
-
+    <App/>,
   document.getElementById('root')
 );

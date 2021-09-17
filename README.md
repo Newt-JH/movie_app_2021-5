@@ -1,5 +1,48 @@
 # __김지환 201740112__
 
+## __[ 2021.09.15 ]__ <br></br>
+
+### __Map 함수__ <br></br>
+
+>- __Map 함수의 경우 선언형 프로그래밍이며, 해당 함수를 사용하여 받은 값들 하나 하나를 보여준다.__
+
+### __코드 작성__ <br></br>
+
+<h3>Potato.js</h3>
+
+```
+function Potato(bar){
+    return<h1>I love {bar.fav}</h1>
+}
+export default Potato;
+```
+<h3>App.js</h3>
+
+
+```
+import Potato from "./Potato";
+
+function App() {
+  return (
+    <Potato fav="potato"/>
+  )
+
+export default App;
+
+```
+
+<p> 
+
+위에 만든 코드의 함수를 App.js에 import를 한 후 Potato를 return 하게 되면, index.js에서 Potato.js의 값을 노출하게 된다.
+
+</p>
+
+* * *
+* * *
+
+
+
+
 ## __[ 2021.09.08 ]__ <br></br>
 
 ### __학습 내용__ <br></br>
