@@ -1,5 +1,51 @@
 # __김지환 201740112__
 
+## __[ 2021.09.29 ]__ <br></br>
+
+>- __State 변수에 count를 0으로 지정해준 후 add 버튼과 minus 버튼을 만들어 해당 버튼 클릭 시 카운터를 변환해주는 {count : this.state.count + 1}__<br><br/>
+>- __함수와, {count : this.state.count - 1}을 사용해 값을 변환해준다. this.setState을 사용하는 이유는 state 에 있는 값을 바꾸기 위해서는, this.setState 를 무조건 거쳐야 변환이 가능하기 때문이다.__
+
+### __코드 작성__ <br></br>
+
+
+
+```
+class Apps extends Component {
+
+  constructor(props){
+    super(props)
+    console.log('constructor');
+  }
+
+  componentDidMount(){
+    console.log('componentDidMount...Goodbye');
+  }
+
+  state = {
+    count: 0
+  }
+
+   add = () => {
+    this.setState({count : this.state.count + 1})
+  }
+    minus = () => {
+      this.setState({count : this.state.count - 1})
+  }
+
+  render() {
+    console.log('render');
+    return(
+      <div>
+      <h1>The number is: {this.state.count} </h1>
+      <button onClick={this.add}>Add</button>
+      <button onClick={this.minus}>Minus</button>
+      </div>
+    )
+  }
+}
+```
+
+
 ## __[ 2021.09.15 ]__ <br></br>
 
 ### __Map 함수__ <br></br>
