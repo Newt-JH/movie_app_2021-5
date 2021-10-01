@@ -43,6 +43,9 @@ class Apps extends Component {
     )
   }
 }
+
+
+export default Apps;
 ```
 
 
