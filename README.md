@@ -1,5 +1,27 @@
 # __김지환 201740112__
 
+## __[ 2021.10.06]__ <br></br>
+
+>- __setTimeout(() => {this.setState({isLoading : false})
+},6000)___<br><br/>
+>- __해당 함수를 사용하여, 6초 후 로딩중이 종료되고 지정한 값으로 넘어가는 부분을 만들었다.__<br><br/>
+>- __Axios는 HTTP통신에서의 인기있는 라이브러리입니다. <br />Axios는 브라우저와 Node.js 플랫폼에서 모두 사용할 수 있습니다.__
+
+### __코드 작성__ <br></br>
+
+
+```
+getMovies = async () =>{
+  const{
+    data: {
+      data: {movies}
+    }
+  } = await axios.get('https://yts.mx/api/v2/list_movies.json') 
+  console.log(movies)
+}
+
+```
+
 ## __[ 2021.09.29 ]__ <br></br>
 
 >- __State 변수에 count를 0으로 지정해준 후 add 버튼과 minus 버튼을 만들어 해당 버튼 클릭 시 카운터를 변환해주는 {count : this.state.count + 1}__<br><br/>
