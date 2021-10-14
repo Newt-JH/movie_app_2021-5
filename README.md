@@ -2,7 +2,7 @@
 
 ## __[ 2021.10.13]__ <br></br>
 
->- __isLoading 이라는 함수를 만들어서 해당 함수를 this.steState에 넣고, isLoading: false 를 사용하면 해당 함수가 출력이 되고, true를 사용하면 해당 코드가 사라지게 된다.__<br><br/>
+>- __isLoading 이라는 함수를 만들어서 해당 함수를 this.steState에 넣고, isLoading: true 를 사용하면 해당 함수가 출력이 되고, false를 사용하면 해당 코드가 사라지게 된다.__<br><br/>
 >- __?sort_by=rating 라는 코드를 사용하게 되면, rating을 내림차순으로 나열해준다.__
 
 <br></br>
