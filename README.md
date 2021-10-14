@@ -1,5 +1,48 @@
 # __김지환 201740112__
 
+## __[ 2021.10.13]__ <br></br>
+
+>- __isLoading 이라는 함수를 만들어서 해당 함수를 this.steState에 넣고, isLoading: false 를 사용하면 해당 함수가 출력이 되고, true를 사용하면 해당 코드가 사라지게 된다.__<br><br/>
+>- __?sort_by=rating 라는 코드를 사용하게 되면, rating을 내림차순으로 나열해준다.__
+
+<br></br>
+### __코드 작성__ <br></br>
+<h2><b>loding</b></h2>
+
+```
+this.setState({movies, isLoading: false})
+```
+<h2><b>rating</b></h2>
+
+```
+await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating')
+```
+<h2><b>Movie.js</b></h2>
+
+```
+function Movie({title, year, summary, poster, genres}) {
+    return(
+    <div className='movie'>
+        <img src={poster} alt={title} title ={title} />
+        <div className='movie-data'>
+            <h3 className='movie-title'>{title}</h3>
+            <h5 className='movie-year'>{year}</h5>
+            <p className='movie-summary'>{summary}</p>
+        </div> 
+    </div>
+    )
+}
+
+
+Movie.propTypes = {
+    year: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    summary:PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired,
+    genres: PropTypes.arrayOf(PropTypes.string).isRequired
+}
+```
+
 ## __[ 2021.10.06]__ <br></br>
 
 >- __setTimeout(() => {this.setState({isLoading : false})
