@@ -1,5 +1,19 @@
 # __김지환 201740112__
 
+## __[ 2021.10.27]__ <br></br>
+
+>- __라우터를 이용하여 주소뒤에 about을 사용했을때 하면이 이동되게 한다. 이를 사용하기 위해 <br></br> >npm install react-router-dom을 사용하여 설치한다.__
+
+```
+      <Route path = '/' exact={true} component={Home} />
+      <Route path = '/about' component={About} />
+```
+>- __위의 코드를 살펴보면, exact라는 부분이 나와있는데 해당 부분을 써주지 않는다면 /about 부분에도 / 가 있기 때문에 Home이 같이 보이게 된다. 그러하여 우리가 원하는 곳으로만 이동시키고 싶을때에는 가장 중요하게 살펴봐야 할 부분이다.__
+
+
+
+
+
 ## __[ 2021.10.13]__ <br></br>
 
 >- __isLoading 이라는 함수를 만들어서 해당 함수를 this.steState에 넣고, isLoading: true 를 사용하면 해당 함수가 출력이 되고, false를 사용하면 해당 코드가 사라지게 된다.__<br><br/>
