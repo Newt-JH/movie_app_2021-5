@@ -1,5 +1,34 @@
 # __김지환 201740112__
 
+## __[ 2021.11.03]__ <br></br>
+
+>- __Navigation function을 생성하여 글을 클릭했을 때 해당 주소로 이동하여 화면을 출력한다. 또한 Navigation 태그의 경우 반드시 HashRouter 태그 안에 포함이 되어야한다.__
+
+### __코드 작성__ <br></br>
+
+```
+function Navigation() {
+    return(
+        <div className="nav">
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        </div>
+    )
+}
+```
+```
+function App(){
+  return (
+    <HashRouter>
+      <Navigation />
+      <Route path = '/' exact={true} component={Home} />
+      <Route path = '/about' component={About} />
+      <Route path = '/movie-detail' component={Detail} />
+    </HashRouter>
+  )
+}
+```
+
 ## __[ 2021.10.27]__ <br></br>
 
 >- __라우터를 이용하여 주소뒤에 about을 사용했을때 하면이 이동되게 한다. 이를 사용하기 위해 <br></br> >npm install react-router-dom을 사용하여 설치한다.__
