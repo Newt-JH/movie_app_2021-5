@@ -28,6 +28,20 @@ function App(){
   )
 }
 ```
+<br>
+### __리다이렉트 기능__ <br></br>
+
+```
+componentDidMount(){
+        const { location, history} = this.props
+        if(location.state === undefined){
+            history.push("/")
+        }
+    }
+```
+
+>- __해당 기능을 볼 때, state의 값이 underfined일 시 /로 이동시켜달라는 부분이며, render 함수 후 componentDidMount가 실행된다. 그렇기 때문에 state에 underfined 값이 들어있게 된다면, render 함수는 실행되지 않는다__
+
 
 ## __[ 2021.10.27]__ <br></br>
 
