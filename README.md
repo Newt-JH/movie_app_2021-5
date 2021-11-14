@@ -2,6 +2,14 @@
 
 ## __[ 2021.11.03]__ <br></br>
 
+>- __package.json 폴더에 homepage:"주소"를 입력한 후__
+>- __script 부분에 prefeploy:npm run build를 작성하고__
+>- __deploy:gh-pages-d build를 쓰게되면 해당 주소로 경로가 설정된다.__
+
+>- __터미널에는 npm install gh-pages를 사용하여 설치해준 후, npm run deploy로 배포해주게 된다.__
+
+## __[ 2021.11.03]__ <br></br>
+
 >- __Navigation function을 생성하여 글을 클릭했을 때 해당 주소로 이동하여 화면을 출력한다. 또한 Navigation 태그의 경우 반드시 HashRouter 태그 안에 포함이 되어야한다.__
 
 ### __코드 작성__ <br></br>
